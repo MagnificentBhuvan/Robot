@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190103 15:15:22.302" generator="Robot 3.1 (Python 2.7.12 on linux2)">
+<suite source="/home/bhuvan/robot/facebook/second.robot" id="s1" name="Second">
+<test id="s1-t1" name="Facebook Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190103 15:15:22.386" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com'.</msg>
+<status status="PASS" endtime="20190103 15:15:28.883" starttime="20190103 15:15:22.385"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=email</arg>
+<arg>${eemail}</arg>
+</arguments>
+<msg timestamp="20190103 15:15:28.884" level="INFO">Typing text 'bhuvanavignesh007@gmail.com' into text field 'name=email'.</msg>
+<status status="PASS" endtime="20190103 15:15:29.462" starttime="20190103 15:15:28.883"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=pass</arg>
+<arg>xyz</arg>
+</arguments>
+<msg timestamp="20190103 15:15:29.462" level="INFO">Typing text 'xyz' into text field 'name=pass'.</msg>
+<status status="PASS" endtime="20190103 15:15:29.535" starttime="20190103 15:15:29.462"></status>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_form</arg>
+</arguments>
+<msg timestamp="20190103 15:15:29.535" level="INFO">Submitting form 'id=login_form'.</msg>
+<status status="PASS" endtime="20190103 15:15:31.857" starttime="20190103 15:15:29.535"></status>
+</kw>
+<doc>bhuvanavignesh007 haha</doc>
+<status status="PASS" endtime="20190103 15:15:31.857" critical="yes" starttime="20190103 15:15:22.385"></status>
+</test>
+<test id="s1-t2" name="Facebook-Test-Close">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190103 15:15:31.859" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com'.</msg>
+<status status="PASS" endtime="20190103 15:15:40.168" starttime="20190103 15:15:31.858"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190103 15:15:40.277" starttime="20190103 15:15:40.168"></status>
+</kw>
+<status status="PASS" endtime="20190103 15:15:40.277" critical="yes" starttime="20190103 15:15:31.858"></status>
+</test>
+<status status="PASS" endtime="20190103 15:15:40.278" starttime="20190103 15:15:22.303"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Second" pass="2">Second</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

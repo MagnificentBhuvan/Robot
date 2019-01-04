@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190103 16:17:11.299" generator="Robot 3.1 (Python 2.7.12 on linux2)">
+<suite source="/home/bhuvan/robot/linuxcmd/third.robot" id="s1" name="Third">
+<test id="s1-t1" name="Test-List">
+<kw name="List Files In Directory" library="OperatingSystem">
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20190103 16:17:11.327" html="yes" level="INFO">Listing contents of directory '&lt;a href="file:///home/bhuvan"&gt;/home/bhuvan&lt;/a&gt;'.</msg>
+<msg timestamp="20190103 16:17:11.327" level="INFO">14 files:
+.ICEauthority
+.Xauthority
+.bash_history
+.bash_logout
+.bashrc
+.dmrc
+.mininet_history
+.profile
+.rnd
+.sudo_as_admin_successful
+.xsession-errors
+.xsession-errors.old
+examples.desktop
+get-pip.py</msg>
+<status status="PASS" endtime="20190103 16:17:11.327" starttime="20190103 16:17:11.326"></status>
+</kw>
+<status status="PASS" endtime="20190103 16:17:11.327" critical="yes" starttime="20190103 16:17:11.326"></status>
+</test>
+<status status="PASS" endtime="20190103 16:17:11.327" starttime="20190103 16:17:11.300"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Third" pass="1">Third</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
